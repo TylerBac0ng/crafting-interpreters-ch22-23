@@ -1,0 +1,62 @@
+-- the book's locals
+inner
+outer
+stack: 0
+3
+3
+stack: 0
+local
+global
+stack: 0
+nil
+stack: 0
+[line 1] Error at 'a': Already a variable with this name in this scope.
+stack: 0
+[line 1] Error at 'a': Can't read local variable in its own initializer.
+stack: 0
+3
+2
+1
+stack: 0
+-- 22.3: const
+1
+stack: 0
+[line 1] Error at 'a': Can't assign to constant 'a'.
+stack: 0
+[line 1] Error at ';': Expect '=' after constant name.
+stack: 0
+3
+1
+stack: 0
+2
+3
+stack: 0
+3.14
+stack: 0
+[line 1] Error at 'pi': Can't assign to constant 'pi'.
+stack: 0
+[line 1] Error at 'pi': Can't redeclare a constant.
+stack: 0
+[line 1] Error at 'pi': Can't redeclare a constant.
+stack: 0
+3.14
+stack: 0
+[line 1] Error at 'oops': Expect ';' after value.
+stack: 0
+changed
+stack: 0
+-- 22.4: more than 256 locals
+0
+nil
+255
+256
+299
+300
+v298
+stack: 0
+OP_GET_LOCAL_LONG: 6
+OP_SET_LOCAL_LONG: 4
+nil
+stack: 0
+[line 1] Error at 'oneTooMany': Too many local variables in function.
+stack: 0

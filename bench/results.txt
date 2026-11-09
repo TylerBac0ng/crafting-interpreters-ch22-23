@@ -1,0 +1,20 @@
+22.1 benchmark: Intel Core i7-7700HQ, clang -O2, median of 7. The machine
+was busy (load average 15.94 20.86 32.40), so only the large gaps are reliable.
+
+== linear scan (default) ==
+     1 locals:   55.0 ns per use,  544.8 ns per declaration
+     4 locals:   61.6 ns per use,  218.2 ns per declaration
+    16 locals:   78.0 ns per use,  155.9 ns per declaration
+    64 locals:  185.4 ns per use,  283.2 ns per declaration
+   256 locals:  532.4 ns per use,  540.5 ns per declaration
+  1024 locals: 3010.2 ns per use, 3627.0 ns per declaration
+  4096 locals: 8224.2 ns per use, 15609.9 ns per declaration
+
+== hash table (-DLOCAL_HASH) ==
+     1 locals:   92.5 ns per use, 1250.0 ns per declaration
+     4 locals:  114.9 ns per use,  575.0 ns per declaration
+    16 locals:  139.1 ns per use,  523.0 ns per declaration
+    64 locals:  122.6 ns per use,  410.1 ns per declaration
+   256 locals:  157.6 ns per use,  408.5 ns per declaration
+  1024 locals:  234.9 ns per use,  520.2 ns per declaration
+  4096 locals:  402.6 ns per use,  736.3 ns per declaration
